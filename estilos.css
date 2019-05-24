@@ -1,0 +1,352 @@
+
+/*===========================================================================
+==============  Porta Retrato de Bob Esponja (16 Mayo 2019) - HMM ===========
+===========================================================================*/
+body {
+margin-left: 20%;
+position: absolute;
+z-index: -10;
+}
+
+.imagen-fondo {
+    width: 800px; 
+    height: 650px;
+    opacity: .5;
+  }
+
+  #cuerpo {
+    width: 185px;
+    height: 266px;
+    background: #f5ee31;
+    border: solid 2px #2d1102;
+    position: absolute;
+    z-index: 1;
+    margin-top: -449px;
+    margin-left: 188px;
+    overflow: hidden;
+}
+
+/* Poros - General: z-index(1)*/
+
+.poros > div {
+    background: #8a68099c;
+    border-radius: 50%;
+    position: absolute;
+    z-index: -1;
+}
+
+/* Hijos */
+
+.poros > div:nth-child(1) {
+    width: 20px;
+    height: 20px;
+    margin: 15px 13px 0px;
+}
+
+.poros > div:nth-child(2) {
+    width: 40px;
+    height: 40px;
+    margin: 117px 30px 0px;
+}
+
+.poros > div:nth-child(3) {
+    width: 10px;
+    height: 10px;
+    margin: 45px 162px 0px;
+}
+
+.poros > div:nth-child(4) {
+    width: 30px;
+    height: 30px;
+    margin: 15px 133px 0px;
+}
+
+.poros > div:nth-child(5) {
+    width: 25px;
+    height: 25px;
+    margin: 77px -3px 0px;
+}
+
+.poros > div:nth-child(6) {
+    width: 35px;
+    height: 35px;
+    margin: 138px 153px 0px;
+}
+
+/* Pestañas General: z-index(2) */
+
+.pestanas > div {
+    width: 3px;
+    height: 15px;
+    background: black;
+    position: absolute;
+    z-index: 4;
+    display: flex;
+}
+
+.pestanas > div:nth-child(1) {
+    float: left;
+    margin: 15px 10px 0px 45px;
+    transform: rotate(134deg);
+}
+
+.pestanas > div:nth-child(2) {
+    margin: 14px 10px 0px 60px;
+    float: left;
+}
+
+.pestanas > div:nth-child(3) {
+    margin: 15px 10px 0px 76px;
+    float: left;
+    transform: rotate(45deg);
+}
+
+.pestanas > div:nth-child(4) {
+    margin: 15px 10px 0px 107px;
+    float: right;
+    transform: rotate(134deg);
+}
+
+.pestanas > div:nth-child(5) {
+    margin: 14px 10px 0px 122px;
+    float: right;
+}
+
+.pestanas > div:nth-child(6) {
+    margin: 15px 10px 0px 137px;
+    float: right;
+    transform: rotate(45deg);
+}
+    
+/* Ojos */
+
+.ojos {
+position: absolute;
+width: 70px;
+height: 70px;
+background: white;
+border: solid 3px black;
+border-radius: 50%;
+z-index: 3;
+top: 49px;
+}
+
+#ojo-izq {
+margin: -23px 20px 0px;
+}
+
+#ojo-der {
+margin: -23px 0px 0px 88px;
+}
+
+#ojo-izq::after {
+content: "";
+width: 40px;
+height: 40px;
+background: #04bff9;
+border: solid 2px black;
+border-radius: 50%;
+position: absolute;
+z-index: 4;
+margin: 13px;
+}
+
+#ojo-der::after {
+content: "";
+width: 40px;
+height: 40px;
+background: #04bff9;
+border: solid 2px black;
+border-radius: 50%;
+position: absolute;
+z-index: 4;
+margin: 13px;
+}
+     
+#ojo-izq::before {
+content: "";
+width: 25px;
+height: 25px;
+background: black;
+border-radius: 50%;
+position: absolute;
+z-index: 5;
+margin: 22px;
+}
+
+#ojo-der::before {
+content: "";
+width: 25px;
+height: 25px;
+background: black;
+border-radius: 50%;
+position: absolute;
+z-index: 5;
+margin: 22px;
+}    
+
+/* nariz */
+
+#nariz {
+width: 20px;
+height: 33px;
+background: #f5ee31;
+position: absolute;
+border: 3px solid black;
+z-index: 6;
+top: 70px;
+left: 81px;
+border-bottom: 3px solid transparent;
+border-radius: 42%;
+}
+
+/* boca */
+
+#boca {
+    width: 139px;
+    height: 66px;
+    background: transparent;
+    position: absolute;
+    top: 66px;
+    left: 23px;
+    border-radius: 50%;
+    border-bottom: 4px solid #000;
+}
+/* dientes */
+
+.dientes {
+    width: 15px;
+    height: 17px;
+    background: white;
+    border: 4px solid black;
+    display: inline-block;
+    position: relative;
+    top: 66px;
+    left: 45px;
+}
+
+/* mejillas */
+
+.mejillas {
+    width: 18px;
+    height: 11px;
+    background: transparent;
+    position: absolute;
+    top: 28px;
+    border: 3px solid rgb(218, 105, 71);
+    border-bottom: 3px solid transparent;
+    border-radius: 50% 50% 20% 20%;
+}
+
+.mejilla-izq {
+    left:-9px;
+}
+
+.mejilla-der {
+    left: 125px;
+}
+
+/* camisa */
+
+#camisa {
+    width: 101%;
+    height: 40px;
+    background: white;
+    border: solid 5px black;
+    position: absolute;
+    margin: 180px -6px;
+    z-index: 3;
+}
+
+/* cuello corbata */
+
+
+.cuello {
+    width: 40px;
+    height: 25px;
+    position: absolute;
+    background: white;
+    top: -19px;
+    border: 4px solid black;
+    z-index: 2;
+}
+
+
+.cuello-izq {
+left: 37px;
+transform: rotate(32deg);
+}
+
+.cuello-der {
+left: 103px;
+transform: rotate(-32deg);
+}
+
+/* corbata */
+
+#corbata {
+    width: 30px;
+    height: 30px;
+    background: red;
+    position: absolute;
+    left: 76px;
+    top: -2px;
+    z-index: 50;
+    border-radius: 50%;
+    border: solid;
+}
+
+#cola-corbata {
+    width: 35px;
+    height: 35px;
+    background: red;
+    border: 4px solid black;
+    position: absolute;
+    left: 71px;
+    bottom: -2px;
+    z-index: 5;
+    transform: rotate(45deg);
+}
+
+
+/* pantalon */
+
+#pantalon {
+    width: 185px;
+    height: 36px;
+    background: #582e16f0;
+    position: absolute;
+    bottom: 0%;
+    border-top: #000 4px solid;
+    z-index: 2;    
+}
+
+/* cinturon */
+
+.cinturon > div {
+    width: 28px;
+    height: 10px;
+    background: black;
+    position: absolute;
+    top: 15px;
+    }
+
+.cinturon > div:nth-child(1) {
+margin-left: 3px;
+}
+
+.cinturon > div:nth-child(2) {
+    margin-left: 46px;
+}
+
+.cinturon > div:nth-child(3) {
+    margin-left: 116px;
+}
+
+.cinturon > div:nth-child(4) {
+    margin-left: 156px;
+}
+
+
+/*=====  End of  Porta Retrato de Bob Esponja (23 Mayo 2019) - Hellen Merchán  ======*/
+
